@@ -1,6 +1,9 @@
 from f1_22_telemetry.listener import TelemetryListener
 import json
 from datetime import datetime
+from Components import EventData
+from EventData import EventDataClass
+
 
 listener = TelemetryListener(port=20777, host='localhost')
 
@@ -11,6 +14,13 @@ try:
     while True:
         packet = listener.get()
         if packet.header.packet_id == 3:
+
+            ED = EventDataClass(packet).analyse()
+            ED.FastestCar()
+
+
+
+
             packet = packet.to_dict()
             #print(packet["PacketEventData"]["penalty"])
             esc = packet["event_string_code"]
