@@ -13,10 +13,12 @@ obtained = False
 
 async def AddRaceDirector(packet):
     if packet.ESC not in ["SPTP", "RCWN", "TMPT", "FLBK", "BUTN"]:
+        print(packet.ESC, " appened")
         race_director["events"].append(packet.data.to_dict())
 
  
 async def main():
+    obtained = False
     while True:
         packet = listener.get()
         if packet.header.packet_id == 3:

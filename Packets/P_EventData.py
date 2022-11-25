@@ -11,6 +11,8 @@ class P_EventData(BasePacket):
         route = ESC_TO_EVENT_DETAIL[self.ESC]
         if route != "":
             self.data = getattr(self.rawPacket.event_details, route)
+        else:
+            self.data = getattr(self.rawPacket.event_details, route) #Change this to make data empty
 
     @property
     def Penalty():
