@@ -8,4 +8,3 @@ class P_Participants(BasePacket):
         
     def Analyse(self):
         self.List_Participants = [participant.to_dict() for participant in self.rawPacket.participants]
-        print(type(self.List_Participants))
