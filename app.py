@@ -1,19 +1,13 @@
-from tkinter import *
+import customtkinter
+from Utilities import Util_ViewThemes as UVT
+from Views import View_MainFrame
 
-root = Tk()
-root.title("Tests screens")
+global activated
+activated = False
 
-e = Entry(root, width=600)
+customtkinter.set_appearance_mode("dark")  # Modes: "System" (standard), "Dark", "Light"
+# customtkinter.set_default_color_theme(UVT.Themes_List['blue'])  # Themes: "blue" (standard), "green", "dark-blue"
 
-btn_text = StringVar()
-is_live = True
-
-def toggle_live(arg):
-    global is_live
-    is_live = not arg
-    btn_text.set(is_live)
-
-live = Button(root,textvariable=btn_text, padx=30, pady=20, command=lambda: toggle_live(is_live))
-live.pack()
-
-root.mainloop()
+if __name__ == "__main__":
+    app = View_MainFrame.MainFrame()
+    app.mainloop()
