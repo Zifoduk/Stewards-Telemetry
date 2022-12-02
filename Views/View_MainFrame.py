@@ -2,6 +2,7 @@ import customtkinter
 from settings import GetImageFilePath
 from . import View_People, View_Race_Director, View_Settings
 from PIL import Image, ImageTk
+import globalVars
 
 class MainFrame(customtkinter.CTk):
 
@@ -13,7 +14,6 @@ class MainFrame(customtkinter.CTk):
 
     def __init__(self):
         super().__init__()
-
         self.title("CustomTkinter complex_example.py")
         self.geometry(f"{MainFrame.WIDTH}x{MainFrame.HEIGHT}")
         self.protocol("WM_DELETE_WINDOW", self.on_closing)  # call .on_closing() when app gets closed
@@ -67,6 +67,7 @@ class MainFrame(customtkinter.CTk):
         route(self, self.frame_2)
 
     def on_closing(self, event=0):
+        globalVars.app_Open = False
         self.destroy()
 
     LIST_OF_PAGES = {
