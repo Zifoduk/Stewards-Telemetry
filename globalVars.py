@@ -1,4 +1,4 @@
-from tkinter import *
+from customtkinter import *
 
 #activated = "False"
 activated_StringVar = None

@@ -8,7 +8,7 @@ import time
 
 telemetryService = Thread(target=TelemetryService)
 customtkinter.set_appearance_mode("dark")  # Modes: "System" (standard), "Dark", "Light"
-customtkinter.set_default_color_theme('Resources\Themes\green.json')  # Themes: "blue" (standard), "green", "dark-blue"
+#customtkinter.set_default_color_theme('Resources\Themes\green.json')  # Themes: "blue" (standard), "green", "dark-blue"
 
 if __name__ == "__main__":
     app = View_MainFrame.MainFrame()
