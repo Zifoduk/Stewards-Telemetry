@@ -15,7 +15,6 @@ class TelemetryService(threading.Thread):
         self.listener = TelemetryListener(port=20779, host='localhost')
         self.race_director = {"participants": [], "events":[], "final_classification": []}
         self.obtained = False
-        self.idle = False
         asyncio.run(self.main())
 
     async def AddFinalClassification(self, packet):

@@ -17,6 +17,7 @@ class MainFrame(customtkinter.CTk):
         self.title("CustomTkinter complex_example.py")
         self.geometry(f"{MainFrame.WIDTH}x{MainFrame.HEIGHT}")
         self.protocol("WM_DELETE_WINDOW", self.on_closing)  # call .on_closing() when app gets closed
+        
  
         # ============ frame_right ============
 

@@ -2,16 +2,16 @@ import customtkinter
 from Utilities import Util_ViewThemes as UVT
 from Views import View_MainFrame
 import globalVars
-import main
+from Services.TelemetryService import TelemetryService
 from threading import Thread
 import time
 
-maintele = Thread(target=main.TelemetryService)
+telemetryService = Thread(target=TelemetryService)
 customtkinter.set_appearance_mode("dark")  # Modes: "System" (standard), "Dark", "Light"
-# customtkinter.set_default_color_theme(UVT.Themes_List['blue'])  # Themes: "blue" (standard), "green", "dark-blue"
+customtkinter.set_default_color_theme('Resources\Themes\green.json')  # Themes: "blue" (standard), "green", "dark-blue"
 
 if __name__ == "__main__":
     app = View_MainFrame.MainFrame()
     globalVars.initialize()    
-    maintele.start()
+    telemetryService.start()
     app.mainloop()

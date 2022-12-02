@@ -2,7 +2,7 @@ from tkinter import StringVar
 import customtkinter
 import globalVars
 from threading import Thread
-import main
+import Services.TelemetryService as TelemetryService
 
 def Race_Director(self, parent_frame):
 

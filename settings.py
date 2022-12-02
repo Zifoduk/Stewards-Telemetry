@@ -21,6 +21,8 @@ def GetImageFilePath(file):
     return os.path.join(GetResourcesPath(), Path("Images/"), Path(file))
 def GetThemesPath():
     return os.path.join(GetResourcesPath(), Path("Themes/"))
+def GetThemesFilePath(file):
+    return os.path.join(GetResourcesPath(), Path("Themes/"),  Path(file))
 # def GetdbPath():
 #     return os.path.join(os.path.dirname(os.path.abspath(__file__)), Path("dbs/"))
 # def GetTestGuilds():
