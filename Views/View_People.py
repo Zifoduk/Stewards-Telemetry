@@ -96,9 +96,8 @@ def People(self, parent_frame):
     def Driver_Enter():
         dialog = customtkinter.CTkInputDialog(text='Type in a name:',title="New Driver")
         treeview.insert('i1',customtkinter.END,id=dialog.get_input(),text=dialog.get_input())
-        treeview.insert(dialog.get_input(),customtkinter.END,text='Full Name')
-        treeview.update()
-        # print("Number:", dialog.get_input())
+        # treeview.insert(dialog.get_input(),customtkinter.END,text='Full Name')
+
 
     self.Driver_Entry = customtkinter.CTkButton(frame_1,
         text='Enter Driver Details',
