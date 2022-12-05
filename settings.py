@@ -23,6 +23,8 @@ def GetThemesPath():
     return os.path.join(GetResourcesPath(), Path("Themes/"))
 def GetThemesFilePath(file):
     return os.path.join(GetResourcesPath(), Path("Themes/"),  Path(file))
+def GetDataFilePath(file):
+    return os.path.join(Path("Data/"),Path(file))
 # def GetdbPath():
 #     return os.path.join(os.path.dirname(os.path.abspath(__file__)), Path("dbs/"))
 # def GetTestGuilds():

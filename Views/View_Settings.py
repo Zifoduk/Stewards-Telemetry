@@ -1,7 +1,16 @@
 import customtkinter
+from app import Theme_Mode
+
+
 def Settings(self, parent):
     def switch_event():
         customtkinter.set_appearance_mode(switch_var.get())
+        global Theme_Mode
+        if switch_var.get() == 'dark':
+            Theme_Mode = 1
+        else:
+            Theme_Mode = 0
+
 
     Width = 900
     Height = 600
@@ -24,11 +33,18 @@ def Settings(self, parent):
     window_content_frame.columnconfigure(0, weight=1)
     window_content_frame.columnconfigure(1, weight=3)
 
-    global switch_var 
     switch_var = customtkinter.StringVar(value="dark")
+
+    
+
+    Theme_Mode = 0
 
     switch_1 = customtkinter.CTkSwitch(master=window_content_frame, text="Screen Mode",command=switch_event,variable=switch_var, onvalue="light", offvalue="dark")
     switch_1.grid(row=10,column=0,padx=20,pady=20,sticky=customtkinter.W)
+
+    if Theme_Mode == 1:
+        switch_1.select()
+
 
     IP_Label = customtkinter.CTkLabel(window_content_frame,text='IP Address',width=100,height=10)
     IP_Label.grid(row=0,column=2,padx=20,pady=20,sticky=customtkinter.E)
