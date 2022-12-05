@@ -42,7 +42,7 @@ def People(self, parent_frame):
 
     ##Treeview widget
     treeview = ttk.Treeview(frame_1, height=6, show="tree")
-    treeview.grid(row=1,column=1,padx=20,pady=20,ipadx=20,ipady=20)
+    treeview.grid(row=1,column=1,rowspan=10,padx=20,pady=20,ipadx=20,ipady=20)
 
 
     treeview.insert('', '0', 'i1', text ='Drivers')
@@ -58,7 +58,7 @@ def People(self, parent_frame):
 
     treeScroll.configure(command=treeview.yview)
     treeview.configure(yscrollcommand=treeScroll.set)
-    treeScroll.grid(row=1,column=2,sticky='nws')
+    treeScroll.grid(row=1,column=2,pady=20,sticky='nws')
 
 
     
@@ -159,6 +159,14 @@ def People(self, parent_frame):
             treeview.insert(Name,customtkinter.END,text=entry3.get())
             treeview.insert(Name,customtkinter.END,text=entry4.get())
             treeview.insert(Name,customtkinter.END,text=entry5.get())
+
+
+            
+
+
+
+
+
             window.destroy()
 
         Cancel = customtkinter.CTkButton(window,
