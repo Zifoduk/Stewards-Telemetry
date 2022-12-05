@@ -1,0 +1,175 @@
+{'ai_controlled': 1, 'team_id': 0, 'nationality': 10, 'name': 'George RUSSELL', 'car_number': 63, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 1, 'nationality': 77, 'name': 'Carlos SAINZ', 'car_number': 55, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 2, 'nationality': 22, 'name': 'Max VERSTAPPEN', 'car_number': 33, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 2, 'nationality': 52, 'name': 'Sergio PÉREZ', 'car_number': 11, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 3, 'nationality': 80, 'name': 'Alexander ALBON', 'car_number': 23, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 3, 'nationality': 13, 'name': 'Nicholas LATIFI', 'car_number': 6, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 4, 'nationality': 13, 'name': 'Lance STROLL', 'car_number': 18, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 5, 'nationality': 77, 'name': 'Fernando ALONSO', 'car_number': 14, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 5, 'nationality': 28, 'name': 'Esteban OCON', 'car_number': 31, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 6, 'nationality': 28, 'name': 'Pierre GASLY', 'car_number': 10, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 6, 'nationality': 43, 'name': 'Yuki TSUNODA', 'car_number': 22, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 7, 'nationality': 21, 'name': 'Kevin MAGNUSSEN', 'car_number': 20, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 7, 'nationality': 29, 'name': 'Mick SCHUMACHER', 'car_number': 47, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 8, 'nationality': 3, 'name': 'Daniel RICCIARDO', 'car_number': 3, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 8, 'nationality': 10, 'name': 'Lando NORRIS', 'car_number': 4, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 9, 'nationality': 27, 'name': 'Valtteri BOTTAS', 'car_number': 77, 'ready_status': 0}
+{'ai_controlled': 1, 'team_id': 9, 'nationality': 15, 'name': 'ZHOU Guanyu', 'car_number': 24, 'ready_status': 0}
+{'ai_controlled': 0, 'team_id': 1, 'nationality': 29, 'name': 'Player', 'car_number': 2, 'ready_status': 1}
+{'ai_controlled': 0, 'team_id': 4, 'nationality': 76, 'name': 'SWFT\xa0|\xa0Tao.\xa0Z', 'car_number': 15, 'ready_status': 0}
+{'ai_controlled': 0, 'team_id': 0, 'nationality': 0, 'name': 'Cameron\xa0S.', 'car_number': 44, 'ready_status': 0}
+{'ai_controlled': 0, 'team_id': 255, 'nationality': 0, 'name': '', 'car_number': 0, 'ready_status': 0}
+{'ai_controlled': 0, 'team_id': 255, 'nationality': 0, 'name': '', 'car_number': 0, 'ready_status': 0}
+
+0 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23731,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+1 1
+{
+  "lap_time_in_ms": 85326,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23781,
+  "sector2_time_in_ms": 32383,
+  "sector3_time_in_ms": 29161
+}
+2 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+3 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+4 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+5 1
+{
+  "lap_time_in_ms": 85184,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23769,
+  "sector2_time_in_ms": 32378,
+  "sector3_time_in_ms": 29036
+}
+6 1
+{
+  "lap_time_in_ms": 85220,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23835,
+  "sector2_time_in_ms": 32357,
+  "sector3_time_in_ms": 29027
+}
+7 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+8 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+9 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+10 1
+{
+  "lap_time_in_ms": 84793,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23685,
+  "sector2_time_in_ms": 32201,
+  "sector3_time_in_ms": 28905
+}
+11 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+12 1
+{
+  "lap_time_in_ms": 84842,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23768,
+  "sector2_time_in_ms": 32179,
+  "sector3_time_in_ms": 28894
+}
+13 1
+{
+  "lap_time_in_ms": 84923,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23791,
+  "sector2_time_in_ms": 32091,
+  "sector3_time_in_ms": 29040
+}
+14 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23953,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+16 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}
+17 1
+{
+  "lap_time_in_ms": 84797,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 23759,
+  "sector2_time_in_ms": 32035,
+  "sector3_time_in_ms": 29002
+}
+18 1
+{
+  "lap_time_in_ms": 108154,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 38227,
+  "sector2_time_in_ms": 31958,
+  "sector3_time_in_ms": 37968
+}
+19 0
+{
+  "lap_time_in_ms": 0,
+  "lap_valid_bit_flags": 15,
+  "sector1_time_in_ms": 0,
+  "sector2_time_in_ms": 0,
+  "sector3_time_in_ms": 0
+}

@@ -19,6 +19,8 @@ class TelemetryService(threading.Thread):
 
     async def AddFinalClassification(self, packet):
         self.race_director["final_classification"] = packet.Classification
+        print(packet.header)
+        self.race_director["final_classification_header"] = packet.header
 
     async def AddRaceDirector(self, packet):
         if packet.ESC not in ["SPTP", "RCWN", "TMPT", "FLBK", "BUTN"]:
@@ -28,6 +30,14 @@ class TelemetryService(threading.Thread):
     
     async def AddParticipants(self, packet):
         self.race_director["participants"] = packet.List_Participants
+
+    async def AddSessionHistory(self, packet):
+        pass
+        # print(packet.Car_ID, packet.bestLapTimeLapNum)
+        # [print(l) for l in packet.Laps[:1]]
+
+    async def AddLobbyInfo(self, packet):
+        [print(l) for l in packet.Lobby_Players]
 
     async def main(self):        
         try:   
@@ -42,7 +52,7 @@ class TelemetryService(threading.Thread):
                     if packet != None:
                         try:
                             for route in self.PACKET_ID_ROUTE[packet.header.packet_id]:
-                                await route(packet)
+                                await route(self, packet)
                         except Exception as e:
                             print(e)
                             
@@ -66,9 +76,9 @@ class TelemetryService(threading.Thread):
         6:"",
         7:"",
         8:[AddFinalClassification],
-        9:[AddRaceDirector],
+        9:[AddLobbyInfo],
         10:"",
-        11:[AddRaceDirector]
+        11:[AddSessionHistory]
         }
 
 

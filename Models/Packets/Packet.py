@@ -16,7 +16,7 @@ PACKET_ID_TO_PACKET_TYPE = {
     6:"CAR_TELEMETRY",
     7:"CAR_STATUS",
     8:P_FinalClassification,
-    9:"LOBBY_INFO",
+    9:P_LobbyInfo,
     10:"CAR_DAMAGE",
-    11:"SESSION_HISTORY"
+    11:P_SessionHistory
 }
