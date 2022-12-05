@@ -94,9 +94,88 @@ def People(self, parent_frame):
     
 
     def Driver_Enter():
-        dialog = customtkinter.CTkInputDialog(text='Type in a name:',title="New Driver")
-        treeview.insert('i1',customtkinter.END,id=dialog.get_input(),text=dialog.get_input())
-        # treeview.insert(dialog.get_input(),customtkinter.END,text='Full Name')
+        # dialog = customtkinter.CTkInputDialog(text='Type in a name:',title="New Driver")
+
+
+        window = customtkinter.CTkToplevel()
+        window.geometry("360x300")
+        label = customtkinter.CTkLabel(window, text="Driver Details:")
+        label.grid(row=0,column=0,columnspan=2, padx=40, pady=10)
+
+        entry1 = customtkinter.CTkEntry(master=window,
+                               placeholder_text="User Name",
+                               width=320,
+                               height=30,
+                               border_width=2,
+                               corner_radius=10)
+
+        entry1.grid(row=1,column=0,columnspan=2,padx=10,pady=5)
+
+        entry2 = customtkinter.CTkEntry(master=window,
+                               placeholder_text="Real Name",
+                               width=320,
+                               height=30,
+                               border_width=2,
+                               corner_radius=10)
+
+        entry2.grid(row=2,column=0,columnspan=2,padx=10,pady=5)
+
+        entry3 = customtkinter.CTkEntry(master=window,
+                               placeholder_text="Country",
+                               width=320,
+                               height=30,
+                               border_width=2,
+                               corner_radius=10)
+
+        entry3.grid(row=3,column=0,columnspan=2,padx=10,pady=5)
+
+        entry4 = customtkinter.CTkEntry(master=window,
+                               placeholder_text="Role",
+                               width=320,
+                               height=30,
+                               border_width=2,
+                               corner_radius=10)
+
+        entry4.grid(row=4,column=0,columnspan=2,padx=10,pady=5)
+
+        entry5 = customtkinter.CTkEntry(master=window,
+                               placeholder_text="Driver Number",
+                               width=320,
+                               height=30,
+                               border_width=2,
+                               corner_radius=10)
+
+        entry5.grid(row=5,column=0,columnspan=2,padx=10,pady=5)
+
+        def cancel():
+            window.destroy()
+
+        def Enter():
+
+            Name = entry1.get()
+
+            treeview.insert('i1',customtkinter.END,Name,text=Name)
+            treeview.insert(Name,customtkinter.END,text=entry2.get())
+            treeview.insert(Name,customtkinter.END,text=entry3.get())
+            treeview.insert(Name,customtkinter.END,text=entry4.get())
+            treeview.insert(Name,customtkinter.END,text=entry5.get())
+            window.destroy()
+
+        Cancel = customtkinter.CTkButton(window,
+            text='Cancel',
+            command=cancel
+        )
+        Cancel.grid(row=6,column=1,padx=20,pady=5,sticky='e')
+
+        Enter = customtkinter.CTkButton(window,
+            fg_color='#019000',
+            text='Enter',
+            command=Enter
+        )
+        Enter.grid(row=6,column=0,padx=20,pady=5,sticky='w')
+
+        
+        
 
 
     self.Driver_Entry = customtkinter.CTkButton(frame_1,
