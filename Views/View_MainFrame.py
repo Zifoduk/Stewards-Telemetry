@@ -21,8 +21,8 @@ class MainFrame(customtkinter.CTk):
  
         # ============ frame_right ============
 
-        self.frame_2 = customtkinter.CTkFrame(self,width=500,height=MainFrame.HEIGHT-40)
-        self.frame_2.grid(row=0,column=1,pady=20,sticky='news')
+        self.frame_2 = customtkinter.CTkFrame(self,width=500,height=MainFrame.HEIGHT-60)
+        self.frame_2.grid(row=0,column=1,pady=20,ipady=10,sticky='news')
 
         # ============ frame_left ============
 
@@ -32,16 +32,16 @@ class MainFrame(customtkinter.CTk):
         self.pg1 = customtkinter.CTkButton(self.frame_1,text='',height=30,width=30,command=self.Menu)
         self.pg1.grid(row=1, column=0,padx=10,pady=10,sticky='w')
 
-        self.pg1 = customtkinter.CTkButton(self.frame_1,text='',height=30,width=30)
+        self.pg1 = customtkinter.CTkButton(self.frame_1,text='H',height=30,width=30)
         self.pg1.grid(row=3, column=0,padx=10,pady=10)
 
-        self.pg2 = customtkinter.CTkButton(self.frame_1,text='',height=30,width=30,command=lambda: self.Handle_Menu_Change("People"))
+        self.pg2 = customtkinter.CTkButton(self.frame_1,text='P',height=30,width=30,command=lambda: self.Handle_Menu_Change("People"))
         self.pg2.grid(row=5, column=0,padx=10,pady=10)
 
-        self.pg3 = customtkinter.CTkButton(self.frame_1,text='',height=30,width=30,command=lambda: self.Handle_Menu_Change("Race Director"))
+        self.pg3 = customtkinter.CTkButton(self.frame_1,text='R',height=30,width=30,command=lambda: self.Handle_Menu_Change("Race Director"))
         self.pg3.grid(row=7, column=0,padx=10,pady=10)
 
-        self.pg4 = customtkinter.CTkButton(self.frame_1,text='',height=30,width=30,command=lambda: self.Handle_Menu_Change("Settings"))
+        self.pg4 = customtkinter.CTkButton(self.frame_1,text='S',height=30,width=30,command=lambda: self.Handle_Menu_Change("Settings"))
         self.pg4.grid(row=9, column=0,padx=10,pady=10)
 
     def Menu(self):
@@ -54,10 +54,10 @@ class MainFrame(customtkinter.CTk):
             
             Menu_State = True        
         else:
-            self.pg1.configure(text='',width=30)
-            self.pg2.configure(text='',width=30)
-            self.pg3.configure(text='',width=30)
-            self.pg4.configure(text='',width=30)
+            self.pg1.configure(text='H',width=30)
+            self.pg2.configure(text='P',width=30)
+            self.pg3.configure(text='R',width=30)
+            self.pg4.configure(text='S',width=30)
             Menu_State = False
 
     def Handle_Menu_Change(self, page):
@@ -76,8 +76,3 @@ class MainFrame(customtkinter.CTk):
         "People": View_People.People,
         "Race Director": View_Race_Director.Race_Director,
     }
-
-def ButtonIcons(filename):
-    return Image.open('Resources\Images\People_Icon.png').resize((20, 20))
-    #return GetImageFilePath(filename)
-    #return Image.open(GetImageFilePath(filename)).resize((20, 20))

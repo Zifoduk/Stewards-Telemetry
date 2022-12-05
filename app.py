@@ -5,10 +5,20 @@ import globalVars
 from Services.TelemetryService import TelemetryService
 from threading import Thread
 import time
-
+import json
 telemetryService = Thread(target=TelemetryService)
-customtkinter.set_appearance_mode("dark")  # Modes: "System" (standard), "Dark", "Light"
-customtkinter.set_default_color_theme(UVT.Themes_List["blue"])  # Themes: "blue" (standard), "green", "dark-blue"
+
+appearence_mode = 'Dark'
+Theme = 'red'
+
+global Theme_Dict
+Theme_Dict = json.load(open(UVT.Themes_List[Theme]))
+
+global Theme_Mode
+Theme_Mode = 1
+
+customtkinter.set_appearance_mode(appearence_mode)  
+customtkinter.set_default_color_theme(UVT.Themes_List[Theme])  
 
 if __name__ == "__main__":
     app = View_MainFrame.MainFrame()
